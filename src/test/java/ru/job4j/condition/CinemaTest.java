@@ -8,8 +8,9 @@ class CinemaTest {
     @Test
     @DisplayName("Boundary value test")
     void when18ThenWelcomeText() {
+        int in = 18;
         String expected = "Welcome to the cinema.";
-        String out = Cinema.access(18);
+        String out = Cinema.access(in);
         assertThat(out).isEqualTo(expected);
     }
 }
